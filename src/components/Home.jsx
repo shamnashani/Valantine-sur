@@ -28,14 +28,18 @@ function App() {
               Yes 💖
             </button>
 
-            <button
-              className="no"
-              style={{ top: noPosition.top, left: noPosition.left }}
-              onMouseEnter={moveButton}
-              onClick={moveButton}
-            >
-              No 😢
-            </button>
+<button
+  className="no"
+  style={{ top: noPosition.top, left: noPosition.left }}
+  onMouseEnter={moveButton}
+  onClick={() => {
+    alert("Are you sure? Mr.Haseeb! 😏😖 ");
+    moveButton();
+  }}
+>
+  No 😢
+</button>
+
           </div>
         </div>
       ) : (
