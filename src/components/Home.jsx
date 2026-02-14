@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../App.css";
+import love from '../gif/love.gif'
 
 function App() {
   const [accepted, setAccepted] = useState(false);
@@ -43,15 +44,12 @@ function App() {
       ) : (
         <div className="card celebration">
           <h1>Yayyyyy! 💕</h1>
-          <p>
-            You are my favorite notification,  
-            my best commit,  
-            and my forever deployment ❤️
-          </p>
 
-          <div className="couple">
-            👦🏻 💋 👧🏻
-          </div>
+
+<div className="couple">
+  <img src={love} alt="couple kiss" />
+</div>
+
 
           <div className="hearts">
             <span>💖</span>
