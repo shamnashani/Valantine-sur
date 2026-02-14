@@ -21,10 +21,7 @@ function App() {
       {!accepted ? (
         <div className="card">
           <h1>Will you be my Valentine? 💌</h1>
-          <p className="sub">
-            I promise unlimited hugs, zero bugs,
-            and lifetime support 💕
-          </p>
+
 
           <div className="buttons">
             <button className="yes" onClick={() => setAccepted(true)}>
@@ -44,7 +41,11 @@ function App() {
       ) : (
         <div className="card celebration">
           <h1>Yayyyyy! 💕</h1>
-
+          <p>
+            I wish I could hold you today…
+but until that moment comes,
+I’m holding you in every prayer and every heartbeat. 💕
+          </p>
 
 <div className="couple">
   <img src={love} alt="couple kiss" />
